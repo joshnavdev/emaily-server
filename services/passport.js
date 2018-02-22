@@ -34,13 +34,13 @@ passport.use(new GoogleStrategy({
 
 }));
 
-passport.use(new FacebookStrategy({
-  clientID:keys.facebookClientID,
-  clientSecret: keys.facebookClientSecret,
-  callbackURL: 'http://localhost:5000/auth/facebook/callback',
-  profileFields: ['id', 'displayName', 'photos', 'email']
-}, (accessToken, refleshToken, profile, done) => {
-  console.log(profile);
-}));
+// passport.use(new FacebookStrategy({
+//   clientID:keys.facebookClientID,
+//   clientSecret: keys.facebookClientSecret,
+//   callbackURL: 'http://localhost:5000/auth/facebook/callback',
+//   profileFields: ['id', 'displayName', 'photos', 'email']
+// }, (accessToken, refleshToken, profile, done) => {
+//   console.log(profile);
+// }));
 
 
